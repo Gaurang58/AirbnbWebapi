@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Identity; 
 using Microsoft.EntityFrameworkCore;
 using Airbnb.Models;
 
@@ -7,6 +8,10 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddDbContext<AirbnbContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("Connection")));
+
+builder.Services.AddIdentity<IdentityUser, IdentityRole>()
+    .AddEntityFrameworkStores<AirbnbContext>().AddDefaultTokenProviders();
+
 
 
 // Add services to the container.
