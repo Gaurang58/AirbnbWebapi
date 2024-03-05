@@ -1,11 +1,12 @@
 
 using Airbnb.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
  
 namespace Airbnb.Models
 {
-    public class AirbnbContext: DbContext
-    {
+public class AirbnbContext : IdentityDbContext<IdentityUser>    {
         public AirbnbContext(DbContextOptions<AirbnbContext> options) : base(options)
         {
         }
