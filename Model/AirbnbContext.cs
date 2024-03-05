@@ -46,5 +46,6 @@ namespace Airbnb.Models
                 .WithMany()
                 .HasForeignKey(op => op.RoomModelId);
         }
+        public DbSet<Airbnb.Models.OrderConfirmation> OrderConfirmation { get; set; } = default!;
     }
 }
