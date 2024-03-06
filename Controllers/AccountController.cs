@@ -13,7 +13,7 @@ using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace IdentityPractice.Controllers
+namespace Airbnb.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

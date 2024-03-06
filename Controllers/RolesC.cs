@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 //using IdentityPractice.Models;
 using Microsoft.AspNetCore.Authorization;
 
-namespace IdentityPractice.Controllers
+namespace Airbnb.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

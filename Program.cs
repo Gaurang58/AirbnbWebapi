@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Identity; 
 using Microsoft.EntityFrameworkCore;
 using Airbnb.Models;
-using IdentityPractice.Controllers;
+using Airbnb.Controllers;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
